@@ -5,6 +5,7 @@ import Experiences from "./Experiences";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Footer from "./Footer";
+import Resume from "./Resume";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <section className='mx-6'>
           <Experiences />
           <Contact />
+          <Resume />
           <Projects />
         </section>
       </div>
