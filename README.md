@@ -1,1 +1,1 @@
-url: https://my-personal-portfolio-pied-seven.vercel.app
+url: https://personal-portfolio-gilt-sigma.vercel.app
