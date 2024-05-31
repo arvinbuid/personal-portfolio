@@ -7,6 +7,7 @@ import Git from "./assets/techstack/git.svg";
 import Three from "./assets/techstack/threejs.svg";
 import Typescript from "./assets/techstack/typescript.svg";
 import Firebase from "./assets/techstack/firebase.svg";
+import NodeJS from "./assets/techstack/nodejs.svg";
 import MongoDB from "./assets/techstack/mongodb.png";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 
@@ -141,10 +142,10 @@ const Techstack = () => {
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
-                  <img src={Firebase} alt='firebase-icon' width={30} height={30} />
+                  <img src={NodeJS} alt='firebase-icon' width={30} height={30} />
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>Firebase</p>
+                  <p>NodeJS</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
