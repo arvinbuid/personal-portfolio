@@ -6,7 +6,6 @@ import React from "./assets/techstack/react.svg";
 import Git from "./assets/techstack/git.svg";
 import Three from "./assets/techstack/threejs.svg";
 import Typescript from "./assets/techstack/typescript.svg";
-import Firebase from "./assets/techstack/firebase.svg";
 import NodeJS from "./assets/techstack/nodejs.svg";
 import MongoDB from "./assets/techstack/mongodb.png";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
