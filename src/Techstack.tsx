@@ -7,6 +7,7 @@ import Git from "./assets/techstack/git.svg";
 import Three from "./assets/techstack/threejs.svg";
 import Typescript from "./assets/techstack/typescript.svg";
 import NodeJS from "./assets/techstack/nodejs.svg";
+import Express from "./assets/techstack/express.png";
 import MongoDB from "./assets/techstack/mongodb.png";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 
@@ -137,14 +138,26 @@ const Techstack = () => {
         <div className='flex flex-col gap-2 items-center h-full p-2 w-full'>
           <h1 className='text-md'>Database</h1>
           <div className='flex flex-wrap gap-3 items-center justify-center '>
-            {/* Firebase Tooltip */}
+            {/* NodeJS Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
                   <img src={NodeJS} alt='firebase-icon' width={30} height={30} />
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>NodeJS</p>
+                  <p>Node.js</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            {/* ExpressJS Tooltip */}
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <img src={Express} alt='firebase-icon' width={40} height={40} />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Express.js</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
