@@ -18,12 +18,11 @@ export default function Experiences() {
             <li className='flex flex-col'>
               <p className='text-sm'>Frontend Web Development</p>
               <span className='text-xs text-muted-foreground px-2 mb-2'>
-                Enhancing the appearance of company website homepage using CSS and vanilla
-                Javascript.
+                Modify homepage UI of the company website using HTML, CSS and Javascript.
               </span>
             </li>
             <li className='flex flex-col'>
-              <p className='text-sm'>Encoding Data</p>
+              <p className='text-sm'>Data Entry</p>
               <span className='text-xs text-muted-foreground px-2'>
                 Managed and sorted data for the company.
               </span>
@@ -33,28 +32,27 @@ export default function Experiences() {
           </ul>
           <aside className='text-start sm:text-end col-span-full sm:col-span-4 mt-6'>
             <p className='text-xs text-muted-foreground'>Oct.2022 - Dec. 2022</p>
-            <p className='text-sm font-bold'>Frontend Web Developer/IT Intern</p>
+            <p className='text-sm font-bold'>Information Technology Intern</p>
             <p className='text-xs text-blue-500'>Phosclay Chemical Manufacturing</p>
           </aside>
           <ul className='px-2 w-full border-s col-span-full sm:col-span-8 mt-6'>
             <li className='flex flex-col'>
               <p className='text-sm'>Frontend Web Development</p>
               <span className='text-xs text-muted-foreground px-2 mb-2'>
-                Recreate the layout and design of the company's website using Tailwind CSS and
-                vanilla Javascript.
+                Modify website layout and UI using HTML, CSS and Javascript.
               </span>
             </li>
             <li className='flex flex-col'>
-              <p className='text-sm'>Graphic Design & Video Editor</p>
+              <p className='text-sm'>Graphic Design & Video Editing</p>
               <span className='text-xs text-muted-foreground px-2 mb-2'>
-                Creating video montages and pub ads as product advertisement for the company.
+                Created video montages and publication advertisements for product promotion of the
+                company.
               </span>
             </li>
             <li className='flex flex-col'>
               <p className='text-sm'>Social Media Manager</p>
               <span className='text-xs text-muted-foreground px-2'>
-                Managing and handling social media platform accounts through facebook, tiktok, and
-                instagram.
+                Promoting company social media platforms through Facebook Meta.
               </span>
             </li>
           </ul>
