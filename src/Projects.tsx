@@ -1,16 +1,18 @@
-import pokemon from "./assets/pokemon-app.png";
 import ecommerce from "./assets/e-commerce.png";
 import budgetApp from "./assets/budget-app.png";
 import bookLibraryApp from "./assets/book-library-app.png";
+import workoutApp from "./assets/workout-app.png";
 import HTML from "./assets/techstack/html5.png";
 import CSS3 from "./assets/techstack/css3.png";
 import JS from "./assets/techstack/javascript.svg";
 import React from "./assets/techstack/react.svg";
 import Tailwind from "./assets/techstack/tailwind.svg";
-import Typescript from "./assets/techstack/typescript.svg";
-import Axios from "./assets/techstack/axios.svg";
 import ProjectTechstack from "./ProjectTechstack";
 import ReactRouter from "./assets/techstack/react-router.svg";
+import Mongodb from "./assets/techstack/mongodb.png";
+import NodeJS from "./assets/techstack/nodejs.svg";
+import Express from "./assets/techstack/express.png";
+import JWT from "./assets/techstack/jwt.svg";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 
 const Projects = () => {
@@ -23,26 +25,26 @@ const Projects = () => {
 
       {/* Projects */}
       <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-        {/* pokemon api */}
-        <aside className='flex flex-col border rounded overflow-hidden h-full w-full shadow m-auto max-w-[300px]'>
+        {/* workout app */}
+        <aside className='flex flex-col border rounded overflow-hidden h-auto w-full shadow m-auto max-w-[300px]'>
           <div className='relative h-[180px] overflow-hidden flex justify-center'>
             <img
-              src={pokemon}
+              src={workoutApp}
               alt='pokemon app'
               className='ease-in-out duration-100 w-[300px] hover:scale-105 object-contain'
             />
           </div>
           <div className='flex flex-col ml-4 pt-2 items-start'>
             <div>
-              <h5 className='text-lg font-semibold text-start'>Pokemon App</h5>
+              <h5 className='text-lg font-semibold text-start'>Workout App</h5>
               <p className='flex items-center gap-1 text-blue-500 text-xs'>PERSONAL PROJECT</p>
             </div>
           </div>
           <div className='flex flex-col px-2 gap-3 h-auto'>
             <p className='text-sm text-start text-muted-foreground ml-1.5 mt-2'>
-              Web-based application to search the stats of all the pokemons up to the latest.
-              Responsive to any device and has a dark mode feature to give the users a much better
-              experience when using the application in the night.
+              Web-based MERN stack workout application to create, add and delete a workout. The
+              application utilized JWT authentication for login, logout and signup functionality. It
+              is responsive to any device screens for a great user experience and accessibility.
             </p>
 
             {/* techstack icons */}
@@ -83,22 +85,6 @@ const Projects = () => {
                 </Tooltip>
               </TooltipProvider>
 
-              {/* Typescript Tooltip */}
-              <TooltipProvider delayDuration={90} skipDelayDuration={60}>
-                <Tooltip>
-                  <TooltipTrigger>
-                    <img
-                      src={Typescript}
-                      alt='typescript-icon'
-                      className='w-[22px] rounded-sm mt-[3px]'
-                    />
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Typescript</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-
               {/* ReactJS Tooltip */}
               <TooltipProvider delayDuration={90} skipDelayDuration={60}>
                 <Tooltip>
@@ -123,14 +109,50 @@ const Projects = () => {
                 </Tooltip>
               </TooltipProvider>
 
-              {/* Axios Tooltip */}
+              {/* Mongodb Tooltip */}
               <TooltipProvider delayDuration={90} skipDelayDuration={60}>
                 <Tooltip>
                   <TooltipTrigger>
-                    <img src={Axios} alt='tailwindcss-icon' className='w-[22px] mt-[3px]' />
+                    <img src={Mongodb} alt='mongodb-icon' className='w-[30px] mt-[3px]' />
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Axios</p>
+                    <p>Mongodb</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              {/* Express Tooltip */}
+              <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <img src={Express} alt='express-icon' className='w-[22px] mt-[3px]' />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Express.js</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              {/* Node.js Tooltip */}
+              <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <img src={NodeJS} alt='node.js-icon' className='w-[22px] mt-[3px]' />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Node.js</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              {/* JWT Tooltip */}
+              <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <img src={JWT} alt='jsonwebtoken-icon' className='w-[22px] mt-[3px]' />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>JSON Web Token</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -140,7 +162,7 @@ const Projects = () => {
             <div className='flex flex-col mb-1'>
               {/* github source code button*/}
               <a
-                href='https://github.com/arvinbuid/react-vite-search-pokemon-app'
+                href='https://mern-workout-q86t2o38b-arvin-buids-projects.vercel.app/login'
                 className='text-xs w-full'
               >
                 <button className='text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 mb-2 flex gap-1 items-center justify-center w-full'>
@@ -164,7 +186,7 @@ const Projects = () => {
               </a>
 
               {/* live preview */}
-              <a href='https://react-vite-search-pokemon-app.vercel.app' className='text-xs w-full'>
+              <a href='mern-workout-app-navy.vercel.app' className='text-xs w-full'>
                 <button className='text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 mb-2 flex gap-1 items-center justify-center w-full'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -189,7 +211,7 @@ const Projects = () => {
         </aside>
 
         {/* e-commerce */}
-        <aside className='flex flex-col border rounded overflow-hidden h-full w-full shadow m-auto max-w-[300px]'>
+        <aside className='flex flex-col border rounded overflow-hidden h-auto w-full shadow m-auto max-w-[300px]'>
           <div className='relative h-[180px] overflow-hidden flex justify-center'>
             <img
               src={ecommerce}
@@ -263,7 +285,7 @@ const Projects = () => {
         </aside>
 
         {/* budget-app */}
-        <aside className='flex flex-col border rounded overflow-hidden h-full w-full shadow m-auto max-w-[300px]'>
+        <aside className='flex flex-col border rounded overflow-hidden h-auto w-full shadow m-auto max-w-[300px]'>
           <div className='relative h-[180px] overflow-hidden flex justify-center'>
             <img
               src={budgetApp}
@@ -409,7 +431,7 @@ const Projects = () => {
         </aside>
 
         {/* book library app */}
-        <aside className='flex flex-col border rounded overflow-hidden h-full w-full shadow m-auto max-w-[300px]'>
+        <aside className='flex flex-col border rounded overflow-hidden h-auto w-full shadow m-auto max-w-[300px]'>
           <div className='relative h-[180px] overflow-hidden flex justify-center'>
             <img
               src={bookLibraryApp}
