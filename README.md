@@ -1,1 +1,4 @@
-url: https://personal-portfolio-gilt-sigma.vercel.app
+# My Personal Portfolio
+
+url: www.arvinbuid.com
+
