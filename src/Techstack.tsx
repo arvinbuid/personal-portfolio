@@ -9,6 +9,9 @@ import Typescript from "./assets/techstack/typescript.svg";
 import NodeJS from "./assets/techstack/nodejs.svg";
 import Express from "./assets/techstack/express.png";
 import MongoDB from "./assets/techstack/mongodb.png";
+import CSharp from "./assets/techstack/csharp.png";
+import DotnetCore from "./assets/techstack/asp.netcore-icon.svg";
+import MSSQL from "./assets/techstack/sql-server.png";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 
 const Techstack = () => {
@@ -136,7 +139,7 @@ const Techstack = () => {
       </div>
       <div className='col-span-full'>
         <div className='flex flex-col gap-2 items-center h-full p-2 w-full'>
-          <h1 className='text-md'>Database</h1>
+          <h1 className='text-md'>Backend & Database</h1>
           <div className='flex flex-wrap gap-3 items-center justify-center '>
             {/* NodeJS Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
@@ -154,10 +157,46 @@ const Techstack = () => {
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
-                  <img src={Express} alt='firebase-icon' width={40} height={40} />
+                  <img src={Express} alt='express-icon' width={37} height={37} />
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>Express.js</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            {/* C# Tooltip */}
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <img src={CSharp} alt='c#-icon' width={63} />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>C#</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            {/* ASP.Net Core Tooltip */}
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <img src={DotnetCore} alt='asp.netcore-icon' width={35} height={35} />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>ASP.Net Core</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            {/* SQL Server Tooltip */}
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <img src={MSSQL} alt='sqlserver-icon' width={37} height={37} />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Microsoft SQL Server</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
@@ -166,7 +205,7 @@ const Techstack = () => {
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
-                  <img src={MongoDB} alt='mongodb-icon' width={50} />
+                  <img src={MongoDB} alt='mongodb-icon' width={53} height={53} className='pt-1' />
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>MongoDB</p>

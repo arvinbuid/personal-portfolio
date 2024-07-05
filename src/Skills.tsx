@@ -18,8 +18,8 @@ const Skills = () => {
           <p className='text-sm text-center text-muted-foreground max-w-[350px] lg:text-xs sm:mx-5'>
             I am a junior frontend developer from Cavite Philippines. I am comfortable working with
             frontend tech stacks like HTML, CSS, Javascript, and React.js but I can also work with
-            backend technologies like Node.js, Mongodb etc. I am constantly learning new tech stacks
-            to utilize in my personal and real world job.
+            backend technologies like Node.js, C# etc. I am constantly learning new tech stacks to
+            utilize in my personal and real world job.
           </p>
         </div>
         <Techstack />
