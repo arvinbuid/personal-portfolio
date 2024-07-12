@@ -4,14 +4,14 @@ import JS from "./assets/techstack/javascript.svg";
 import Tailwind from "./assets/techstack/tailwind.svg";
 import React from "./assets/techstack/react.svg";
 import Git from "./assets/techstack/git.svg";
-import Three from "./assets/techstack/threejs.svg";
 import Typescript from "./assets/techstack/typescript.svg";
 import NodeJS from "./assets/techstack/nodejs.svg";
 import Express from "./assets/techstack/express.png";
+import PHP from "./assets/techstack/php.svg";
+import MySQL from "./assets/techstack/mysql.svg";
 import MongoDB from "./assets/techstack/mongodb.png";
-import CSharp from "./assets/techstack/csharp.png";
-import DotnetCore from "./assets/techstack/asp.netcore-icon.svg";
-import MSSQL from "./assets/techstack/sql-server.png";
+import Postman from "./assets/techstack/postman.svg";
+import Bootstrap from "./assets/techstack/bootstrap.svg";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 
 const Techstack = () => {
@@ -99,6 +99,18 @@ const Techstack = () => {
               </Tooltip>
             </TooltipProvider>
 
+            {/* Boostrap Tooltip */}
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <img src={Bootstrap} className='mt-2' alt='bootstrap' width={40} height={40} />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Bootstrap</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
             {/* ReactJS Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
@@ -123,14 +135,14 @@ const Techstack = () => {
               </Tooltip>
             </TooltipProvider>
 
-            {/* ThreeJS Tooltip */}
+            {/* Postman Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
-                  <img src={Three} className='mt-2' alt='threejs-icon' width={35} height={35} />
+                  <img src={Postman} className='mt-2' alt='postman' width={35} height={35} />
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>ThreeJS</p>
+                  <p>Postman</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
@@ -139,7 +151,7 @@ const Techstack = () => {
       </div>
       <div className='col-span-full'>
         <div className='flex flex-col gap-2 items-center h-full p-2 w-full'>
-          <h1 className='text-md'>Backend & Database</h1>
+          <h1 className='text-md'>Backend & Databases</h1>
           <div className='flex flex-wrap gap-3 items-center justify-center '>
             {/* NodeJS Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
@@ -165,38 +177,26 @@ const Techstack = () => {
               </Tooltip>
             </TooltipProvider>
 
-            {/* C# Tooltip */}
+            {/* PHP Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
-                  <img src={CSharp} alt='c#-icon' width={63} />
+                  <img src={PHP} alt='php-icon' width={40} height={40} />
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>C#</p>
+                  <p>PHP</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
 
-            {/* ASP.Net Core Tooltip */}
+            {/* MySQL Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
-                  <img src={DotnetCore} alt='asp.netcore-icon' width={35} height={35} />
+                  <img src={MySQL} alt='mysql-icon' width={40} height={40} />
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>ASP.Net Core</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-
-            {/* SQL Server Tooltip */}
-            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
-              <Tooltip>
-                <TooltipTrigger>
-                  <img src={MSSQL} alt='sqlserver-icon' width={37} height={37} />
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Microsoft SQL Server</p>
+                  <p>MySQL</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
