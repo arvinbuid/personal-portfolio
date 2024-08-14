@@ -1,15 +1,15 @@
-import ecommerce from "./assets/e-commerce.png";
 import budgetApp from "./assets/budget-app.png";
 import jobrover from "./assets/jobrover.png";
 import geojourney from "./assets/geojourney.png";
+import pizzaPalooza from "./assets/pizza-palooza.png";
 import HTML from "./assets/techstack/html5.png";
 import CSS3 from "./assets/techstack/css3.png";
 import JS from "./assets/techstack/javascript.svg";
 import React from "./assets/techstack/react.svg";
 import ReactLeaflet from "./assets/leaflet.svg";
 import Tailwind from "./assets/techstack/tailwind.svg";
-import ProjectTechstack from "./ProjectTechstack";
 import ReactRouter from "./assets/techstack/react-router.svg";
+import Redux from "./assets/techstack/redux.svg";
 import PHP from "./assets/techstack/php.svg";
 import MySQL from "./assets/techstack/mysql.svg";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
@@ -24,26 +24,26 @@ const Projects = () => {
 
       {/* Projects */}
       <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-        {/* jobrover */}
+        {/* pizza-palooza */}
         <aside className='flex flex-col border rounded overflow-hidden h-auto w-full shadow m-auto max-w-[300px]'>
           <div className='relative h-[180px] overflow-hidden flex justify-center'>
             <img
-              src={jobrover}
+              src={pizzaPalooza}
               alt='e-commerce'
               className='ease-in-out duration-100 w-full hover:scale-105 object-contain object-center'
             />
           </div>
           <div className='flex flex-col ml-4 pt-2 items-start'>
             <div>
-              <h5 className='text-lg font-semibold text-start'>Jobrover</h5>
+              <h5 className='text-lg font-semibold text-start'>Pizza Palooza</h5>
               <p className='flex items-center gap-1 text-blue-500 text-xs'>PERSONAL PROJECT</p>
             </div>
           </div>
           <div className='flex flex-col px-2 gap-3 h-auto'>
             <p className='text-sm text-start text-muted-foreground ml-1.5 mt-2'>
-              Job listing application to search and apply jobs online. Employers can also register
-              an account to post a job listing in the system. It was made using vanilla PHP and
-              composer for autoloading.
+              An interactive web application that allows users to buy pizzas online. The application
+              uses a third-party web API to place an order and locate the user on the map using a
+              third-party API so that it can start preparing and processing the ordered pizza.
             </p>
 
             {/* techstack icons */}
@@ -72,26 +72,50 @@ const Projects = () => {
                 </Tooltip>
               </TooltipProvider>
 
-              {/* PHP Tooltip */}
+              {/* Javascript */}
               <TooltipProvider delayDuration={90} skipDelayDuration={60}>
                 <Tooltip>
                   <TooltipTrigger>
-                    <img src={PHP} alt='php-icon' className='w-[38px] rounded-sm mt-[3px]' />
+                    <img src={JS} alt='javascript-icon' className='w-[22px] rounded-sm mt-[3px]' />
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>PHP</p>
+                    <p>Javascript</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
 
-              {/* MySQL Tooltip */}
+              {/* ReactJS Tooltip */}
               <TooltipProvider delayDuration={90} skipDelayDuration={60}>
                 <Tooltip>
                   <TooltipTrigger>
-                    <img src={MySQL} alt='mysql-icon' className='w-[35px] rounded-sm mt-[3px]' />
+                    <img src={React} alt='reactjs-icon' className='w-[22px] rounded-sm mt-[3px]' />
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>MySQL</p>
+                    <p>ReactJS</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              {/* React Router */}
+              <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <img src={ReactRouter} alt='tailwindcss-icon' className='w-[25px] mt-[3px]' />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>React Router</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              {/* Redux */}
+              <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <img src={Redux} alt='redux-icon' className='w-[25px] mt-[3px]' />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Redux</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -100,7 +124,7 @@ const Projects = () => {
             {/* source code & live preview */}
             <div className='flex flex-col mb-1'>
               {/* github source code button*/}
-              <a href='https://github.com/arvinbuid/jobrover' className='text-xs w-full'>
+              <a href='https://github.com/arvinbuid/pizza-palooza' className='text-xs w-full'>
                 <button className='text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 mb-2 flex gap-1 items-center justify-center w-full'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -122,7 +146,7 @@ const Projects = () => {
               </a>
 
               {/* live preview */}
-              <a href='https://jobrover.tech' className='text-xs w-full'>
+              <a href='https://pizza-palooza-alpha.vercel.app' className='text-xs w-full'>
                 <button className='text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 mb-2 flex gap-1 items-center justify-center w-full'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -296,35 +320,83 @@ const Projects = () => {
           </div>
         </aside>
 
-        {/* e-commerce */}
+        {/* jobrover */}
         <aside className='flex flex-col border rounded overflow-hidden h-auto w-full shadow m-auto max-w-[300px]'>
           <div className='relative h-[180px] overflow-hidden flex justify-center'>
             <img
-              src={ecommerce}
+              src={jobrover}
               alt='e-commerce'
               className='ease-in-out duration-100 w-full hover:scale-105 object-contain object-center'
             />
           </div>
           <div className='flex flex-col ml-4 pt-2 items-start'>
             <div>
-              <h5 className='text-lg font-semibold text-start'>E-Commerce</h5>
+              <h5 className='text-lg font-semibold text-start'>Jobrover</h5>
               <p className='flex items-center gap-1 text-blue-500 text-xs'>PERSONAL PROJECT</p>
             </div>
           </div>
           <div className='flex flex-col px-2 gap-3 h-auto'>
             <p className='text-sm text-start text-muted-foreground ml-1.5 mt-2'>
-              E-Commerce Website made with ReactJS that has a functionality to add and delete items
-              from the cart. Responsive to any device to give the users a much better experience
-              browsing through their phone or tablet.
+              Job listing application to search and apply jobs online. Employers can also register
+              an account to post a job listing in the system. It was made using vanilla PHP and
+              composer for autoloading.
             </p>
 
             {/* techstack icons */}
-            <ProjectTechstack />
+            <div className='flex flex-wrap gap-1.5 col-span-3 my-2 ml-2 '>
+              {/* HTML Tooltip */}
+              <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <img src={HTML} alt='html5-icon' className='w-[20px]' />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>HTML5</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              {/* CSS3 Tooltip */}
+              <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <img src={CSS3} alt='css3-icon' className='w-[20px]' />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>CSS3</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              {/* PHP Tooltip */}
+              <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <img src={PHP} alt='php-icon' className='w-[38px] rounded-sm mt-[3px]' />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>PHP</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              {/* MySQL Tooltip */}
+              <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <img src={MySQL} alt='mysql-icon' className='w-[35px] rounded-sm mt-[3px]' />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>MySQL</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </div>
 
             {/* source code & live preview */}
             <div className='flex flex-col mb-1'>
               {/* github source code button*/}
-              <a href='https://github.com/arvinbuid/react-e-commerce' className='text-xs w-full'>
+              <a href='https://github.com/arvinbuid/jobrover' className='text-xs w-full'>
                 <button className='text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 mb-2 flex gap-1 items-center justify-center w-full'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -346,7 +418,7 @@ const Projects = () => {
               </a>
 
               {/* live preview */}
-              <a href='https://react-e-commerce-snowy.vercel.app' className='text-xs w-full'>
+              <a href='https://jobrover.tech' className='text-xs w-full'>
                 <button className='text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 mb-2 flex gap-1 items-center justify-center w-full'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
