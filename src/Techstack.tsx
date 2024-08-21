@@ -3,15 +3,18 @@ import CSS3 from "./assets/techstack/css3.png";
 import JS from "./assets/techstack/javascript.svg";
 import Tailwind from "./assets/techstack/tailwind.svg";
 import React from "./assets/techstack/react.svg";
+import Redux from "./assets/techstack/redux.svg";
+import StyledComponents from "./assets/techstack/styled-components.svg";
 import Git from "./assets/techstack/git.svg";
 import Typescript from "./assets/techstack/typescript.svg";
+// import Bootstrap from "./assets/techstack/bootstrap.svg";
 import NodeJS from "./assets/techstack/nodejs.svg";
 import Express from "./assets/techstack/express.png";
 import PHP from "./assets/techstack/php.svg";
 import MySQL from "./assets/techstack/mysql.svg";
 import MongoDB from "./assets/techstack/mongodb.png";
-import Postman from "./assets/techstack/postman.svg";
-import Bootstrap from "./assets/techstack/bootstrap.svg";
+import Supabase from "./assets/techstack/supabase-icon.svg";
+// import Postman from "./assets/techstack/postman.svg";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 
 const Techstack = () => {
@@ -100,7 +103,7 @@ const Techstack = () => {
             </TooltipProvider>
 
             {/* Boostrap Tooltip */}
-            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+            {/* <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
                   <img src={Bootstrap} className='mt-2' alt='bootstrap' width={40} height={40} />
@@ -109,7 +112,7 @@ const Techstack = () => {
                   <p>Bootstrap</p>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider>
+            </TooltipProvider> */}
 
             {/* ReactJS Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
@@ -119,6 +122,36 @@ const Techstack = () => {
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>ReactJS</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            {/* Redux Tooltip */}
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <img src={Redux} className='mt-2' alt='redux-icon' width={35} height={35} />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Redux</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            {/* Styled Components Tooltip */}
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <img
+                    src={StyledComponents}
+                    className='mt-2'
+                    alt='styled-components-icon'
+                    width={35}
+                    height={35}
+                  />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Styled Components</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
@@ -136,7 +169,7 @@ const Techstack = () => {
             </TooltipProvider>
 
             {/* Postman Tooltip */}
-            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+            {/* <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
                   <img src={Postman} className='mt-2' alt='postman' width={35} height={35} />
@@ -145,7 +178,7 @@ const Techstack = () => {
                   <p>Postman</p>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider>
+            </TooltipProvider> */}
           </div>
         </div>
       </div>
@@ -209,6 +242,18 @@ const Techstack = () => {
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>MongoDB</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            {/* Supabase Tooltip */}
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <img src={Supabase} alt='supabase-icon' width={35} height={35} className='pt-1' />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Supabase</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
