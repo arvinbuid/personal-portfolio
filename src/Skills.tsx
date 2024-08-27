@@ -8,7 +8,7 @@ const Skills = () => {
         <img className='w-[80px]' src={logo} alt='' />
         <article className='text-center sm:text-start'>
           <h1 className='text-4xl font-bold md:text-5xl'>Arvin Buid</h1>
-          <p>Frontend Web Developer</p>
+          <p>Web Developer</p>
         </article>
       </section>
       <div className='grid grid-cols-12 mt-[10px'>
