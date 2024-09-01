@@ -67,7 +67,7 @@ const Techstack = () => {
             </TooltipProvider>
 
             {/* Typescript Tooltip */}
-            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+            {/* <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
                   <img
@@ -82,7 +82,7 @@ const Techstack = () => {
                   <p>Typescript</p>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider>
+            </TooltipProvider> */}
 
             {/* Tailwind Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
@@ -187,7 +187,7 @@ const Techstack = () => {
           <h1 className='text-md'>Backend & Databases</h1>
           <div className='flex flex-wrap gap-3 items-center justify-center '>
             {/* NodeJS Tooltip */}
-            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+            {/* <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
                   <img src={NodeJS} alt='firebase-icon' width={30} height={30} />
@@ -196,10 +196,10 @@ const Techstack = () => {
                   <p>Node.js</p>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider>
+            </TooltipProvider> */}
 
             {/* ExpressJS Tooltip */}
-            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+            {/* <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
                   <img src={Express} alt='express-icon' width={37} height={37} />
@@ -208,7 +208,7 @@ const Techstack = () => {
                   <p>Express.js</p>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider>
+            </TooltipProvider> */}
 
             {/* PHP Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
@@ -235,7 +235,7 @@ const Techstack = () => {
             </TooltipProvider>
 
             {/* MongoDB Tooltip */}
-            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+            {/* <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
                   <img src={MongoDB} alt='mongodb-icon' width={53} height={53} className='pt-1' />
@@ -244,7 +244,7 @@ const Techstack = () => {
                   <p>MongoDB</p>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider>
+            </TooltipProvider> */}
 
             {/* Supabase Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
