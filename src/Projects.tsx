@@ -1,6 +1,5 @@
 import jobrover from "./assets/jobrover.png";
 import geojourney from "./assets/geojourney.png";
-import pizzaPalooza from "./assets/pizza-palooza.png";
 import theWildOasis from "./assets/the-wild-oasis.png";
 import HTML from "./assets/techstack/html5.png";
 import CSS3 from "./assets/techstack/css3.png";
@@ -8,7 +7,6 @@ import JS from "./assets/techstack/javascript.svg";
 import React from "./assets/techstack/react.svg";
 import ReactLeaflet from "./assets/leaflet.svg";
 import ReactRouter from "./assets/techstack/react-router.svg";
-import Redux from "./assets/techstack/redux.svg";
 import ReactQuery from "./assets/techstack/react-query.svg";
 import PHP from "./assets/techstack/php.svg";
 import MySQL from "./assets/techstack/mysql.svg";
