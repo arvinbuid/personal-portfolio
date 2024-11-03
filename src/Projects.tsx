@@ -1,5 +1,5 @@
 import jobrover from "./assets/jobrover.png";
-import geojourney from "./assets/geojourney.png";
+import worldwise from "./assets/worldwise.png";
 import theWildOasis from "./assets/the-wild-oasis.png";
 import nexter from "./assets/nexter.png";
 import HTML from "./assets/techstack/html5.png";
@@ -201,18 +201,18 @@ const Projects = () => {
           </div>
         </aside>
 
-        {/* geojourney */}
+        {/* worldwise */}
         <aside className='flex flex-col border rounded overflow-hidden h-auto w-full shadow m-auto max-w-[300px]'>
           <div className='relative h-[180px] overflow-hidden flex justify-center'>
             <img
-              src={geojourney}
+              src={worldwise}
               alt='e-commerce'
               className='ease-in-out duration-100 w-full hover:scale-105 object-contain object-center'
             />
           </div>
           <div className='flex flex-col ml-4 pt-2 items-start'>
             <div>
-              <h5 className='text-lg font-semibold text-start'>GeoJourney</h5>
+              <h5 className='text-lg font-semibold text-start'>WorldWise</h5>
               <p className='flex items-center gap-1 text-blue-500 text-xs'>PERSONAL PROJECT</p>
             </div>
           </div>
