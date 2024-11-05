@@ -5,14 +5,15 @@ import Tailwind from "./assets/techstack/tailwind.svg";
 import React from "./assets/techstack/react.svg";
 import Redux from "./assets/techstack/redux.svg";
 import StyledComponents from "./assets/techstack/styled-components.svg";
+import Pug from "./assets/techstack/pug.svg";
 import Git from "./assets/techstack/git.svg";
 // import Typescript from "./assets/techstack/typescript.svg";
 // import Bootstrap from "./assets/techstack/bootstrap.svg";
-// import NodeJS from "./assets/techstack/nodejs.svg";
-// import Express from "./assets/techstack/express.png";
+import NodeJS from "./assets/techstack/nodejs.svg";
+import Express from "./assets/techstack/express.png";
 import PHP from "./assets/techstack/php.svg";
 import MySQL from "./assets/techstack/mysql.svg";
-// import MongoDB from "./assets/techstack/mongodb.png";
+import MongoDB from "./assets/techstack/mongodb.png";
 import Supabase from "./assets/techstack/supabase-icon.svg";
 // import Postman from "./assets/techstack/postman.svg";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
@@ -156,6 +157,18 @@ const Techstack = () => {
               </Tooltip>
             </TooltipProvider>
 
+            {/* Pug Tooltip */}
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+              <Tooltip>
+                <TooltipTrigger>
+                  <img src={Pug} className='mt-2' alt='bootstrap' width={40} height={40} />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Pug</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
             {/* Git Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
@@ -187,7 +200,7 @@ const Techstack = () => {
           <h1 className='text-md'>Backend & Databases</h1>
           <div className='flex flex-wrap gap-3 items-center justify-center '>
             {/* NodeJS Tooltip */}
-            {/* <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
                   <img src={NodeJS} alt='firebase-icon' width={30} height={30} />
@@ -196,10 +209,10 @@ const Techstack = () => {
                   <p>Node.js</p>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider> */}
+            </TooltipProvider>
 
             {/* ExpressJS Tooltip */}
-            {/* <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
                   <img src={Express} alt='express-icon' width={37} height={37} />
@@ -208,7 +221,7 @@ const Techstack = () => {
                   <p>Express.js</p>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider> */}
+            </TooltipProvider>
 
             {/* PHP Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
@@ -235,7 +248,7 @@ const Techstack = () => {
             </TooltipProvider>
 
             {/* MongoDB Tooltip */}
-            {/* <TooltipProvider delayDuration={90} skipDelayDuration={60}>
+            <TooltipProvider delayDuration={90} skipDelayDuration={60}>
               <Tooltip>
                 <TooltipTrigger>
                   <img src={MongoDB} alt='mongodb-icon' width={53} height={53} className='pt-1' />
@@ -244,7 +257,7 @@ const Techstack = () => {
                   <p>MongoDB</p>
                 </TooltipContent>
               </Tooltip>
-            </TooltipProvider> */}
+            </TooltipProvider>
 
             {/* Supabase Tooltip */}
             <TooltipProvider delayDuration={90} skipDelayDuration={60}>
